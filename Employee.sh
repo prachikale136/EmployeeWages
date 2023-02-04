@@ -23,6 +23,12 @@ function getWorkingHrs() {
 	echo $workHrs;
 
 }
+function empDailywage() {
+	local workHrs=$1
+	wage=$(($workHrs+$EMP_RATE_PER_HR))
+	echo $wage
+
+}
 
 while [[ $totalWorkHrs -lt $MAX_HRS_IN_MONTH && 
               $totalWorkingDays -lt $NUM_WORKING_DAYS ]]
