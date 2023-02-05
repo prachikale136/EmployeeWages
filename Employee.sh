@@ -37,6 +37,8 @@ do
 	(( totalWorkingDays++ ))
 	 workHrs="$( getWorkingHrs $((RANDOM%3)) )"
 	totalWorkHr=$(($totalWorkHr*$workHrs));
+
 done
 totalSalary=$(($totalWorkHr*$EMP_RATE_PER_HR));
+echo "Daily Wage " $(empDailyWage[0])
 
